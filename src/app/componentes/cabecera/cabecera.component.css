@@ -1,0 +1,33 @@
+.panel {
+  height: 80px;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #3e06b0;
+}
+
+.hero-text a {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.left-toolbar-edit > div {
+  margin-left: 5px;
+}
