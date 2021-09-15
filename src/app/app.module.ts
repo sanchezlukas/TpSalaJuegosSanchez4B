@@ -15,6 +15,9 @@ import { ToolbarModule } from "primeng/toolbar";
 import { HomeComponent } from './pages/home/home.component';
 import { CabeceraComponent } from './componentes/cabecera/cabecera.component';
 import { QuienSoyComponent } from './pages/quien-soy/quien-soy.component';
+import { AngularFireAuthModule } from "@angular/fire/auth";
+import { AngularFireModule } from '@angular/fire';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,9 @@ import { QuienSoyComponent } from './pages/quien-soy/quien-soy.component';
     ButtonModule,
     InputTextModule,
     SplitButtonModule,
-    ToolbarModule
+    ToolbarModule,
+    AngularFireAuthModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]
